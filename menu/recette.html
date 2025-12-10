@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmifion - Recette</title>
+  <link rel="stylesheet" href="../css/Csspoursitemarmifion.css">
+  <script src="../styles/recette.js" defer></script>
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <header class="banniere-menu">
+    <div class="logo-marmi">
+      <img src="../images/logo_marmifion.png" alt="Logo site" class="logo">
+    </div>
+    <nav class="menu">
+      <a href="../Marmifion.html">Accueil</a>
+      <a href="../menu/recette.html">Recettes</a>
+      <a href="../menu/apropos.html">À propos</a>
+      <a href="../menu/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="cadre-centre">
+    <h1>Recette de fondant au chocolat</h1>
+
+    <div class="video-chocolat">
+      <video width="800" height="450" autoplay muted loop controls>
+        <source src="../videos/chocolatcut.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+
+    <!-- GALERIE -->
+    <div class="galerie">
+      <a href="../images/image1.jpg"><img src="../images/image1.jpg" alt=""></a>
+      <a href="../images/image2.jpg"><img src="../images/image2.jpg" alt=""></a>
+      <a href="../images/image3.jpg"><img src="../images/image3.jpg" alt=""></a>
+      <a href="../images/image4.jpg"><img src="../images/image4.jpg" alt=""></a>
+    </div>
+
+    <div class="infos-recette">
+      <div class="info-item">
+        <img src="../svg-icons/oven.svg" alt="Temps de cuisson" width="24">
+        <span>∞ min</span>
+      </div>
+      <span class="bullet">●</span>
+      <div class="info-item">
+        <img src="../svg-icons/chef-hat.svg" alt="Difficulté" width="24">
+        <span>Très dur</span>
+      </div>
+      <span class="bullet">●</span>
+      <div class="info-item">
+        <img src="../svg-icons/currency.svg" alt="Coût" width="24">
+        <span>Cher de ouf</span>
+      </div>
+    </div>
+
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=Y3usdSum-ok5Bnth" class="btn-achat">Acheter les ingrédients</a>
+
+    <h2 class="titre-ingredients">Ingrédients</h2>
+
+    <div class="selection-personnes">
+      <label for="personnes">Nombre de personnes :</label>
+      <select id="personnes">
+        <option value="2">2</option>
+        <option value="4" selected>4</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+
+    <div class="recette-container">
+      <div class="colonne-gauche">
+        <ul id="liste-ingredients" class="liste-ingredients">
+          <li><img src="../images/chocolat.jpg" class="img-ingredient" alt="Chocolat"> Chocolat : <span
+              data-base="200">200</span> g</li>
+          <li><img src="../images/pepitedechocolat.jpg" class="img-ingredient" alt="Pépites"> Pépites choco : <span
+              data-base="40">40</span> g</li>
+          <li><img src="../images/cacao.jpg" class="img-ingredient" alt="Cacao"> Cacao : <span
+              data-base="150">150</span> g</li>
+          <li><img src="../images/beurre.jpg" class="img-ingredient" alt="Beurre"> Beurre : <span
+              data-base="150">150</span> g</li>
+          <li><img src="../images/sucre.jpg" class="img-ingredient" alt="Sucre"> Sucre : <span
+              data-base="100">100</span> g</li>
+          <li><img src="../images/oeufs.jpg" class="img-ingredient" alt="Oeufs"> Oeufs : <span data-base="96">96</span>
+          </li>
+          <li><img src="../images/farine.jpg" class="img-ingredient" alt="Farine"> Farine : <span
+              data-base="50">50</span> g</li>
+          <li><img src="../images/terre.jpg" class="img-ingredient" alt="Terre"> Terre : <span data-base="2">2</span>
+            pelles à soupes</li>
+        </ul>
+      </div>
+
+      <div class="colonne-droite">
+        <h3>Étapes</h3>
+        <div class="infos-preparation">
+          <p>Temps total : 40 min</p>
+          <p>Préparation : 10 min</p>
+          <p>Repos : -</p>
+          <p>Cuisson : 30 min</p>
+        </div>
+        <ol>
+          <li>Préchauffez votre four à 180°C. Faites fondre le chocolat et le beurre.</li>
+          <li>Mélangez sucre, œufs, farine.</li>
+          <li>Ajoutez le chocolat fondu.</li>
+          <li>Beurrez et farinez un moule.</li>
+          <li>Cuisson : 20 min.</li>
+          <li>Laissez refroidir avant de démouler.</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALE POUR LA GALERIE D'IMAGES (L'ANIMATION) -->
+  <div id="fenetreZoomImage" class="fenetre-zoom">
+    <span class="fermer-zoom">&times;</span>
+    <img class="fenetre-zoom-content" id="fenetreZoomImageContenu">
+  </div>
+
+
+
+</body>
+
+</html>

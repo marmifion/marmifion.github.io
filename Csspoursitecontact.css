@@ -1,0 +1,281 @@
+/*
+   Polices choisies
+  Importation des polices Bakemono et Nature */
+@font-face {
+  font-family: 'Bakemono';
+  src: url('../fonts/Bakemono-Stereo-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nature';
+  src: url('../fonts/ZTNature-Medium.ttf') format('truetype');
+}
+
+/* Remise à 0 des marges et padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff7f7;
+  font-family: 'Nature', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.banniere-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 2px solid #ff6f61;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo-marmi {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-family: 'Nature', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.menu a:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.container-contact {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.contact-section {
+  background: white;
+  border-radius: 15px;
+  padding: 60px 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-family: 'Nature', sans-serif;
+  font-size: clamp(32px, 6vw, 48px);
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-family: 'Nature', sans-serif;
+  font-size: clamp(18px, 3vw, 24px);
+  color: #CC8484;
+  margin-bottom: 50px;
+}
+
+.logo-contact {
+  max-width: 250px;
+  width: 60%;
+  margin: 30px auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(255, 111, 97, 0.2));
+  transition: transform 0.3s;
+}
+
+.logo-contact:hover {
+  transform: scale(1.05);
+}
+
+/* Contact team */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-card {
+  background: linear-gradient(135deg, #fff5f3 0%, #ffe8e5 100%);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+
+.team-card:hover {
+  box-shadow: 0 8px 25px rgba(255, 111, 97, 0.2);
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #ff6f61 0%, #e05a3a 100%);
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);
+  transition: transform 0.3s;
+}
+
+.team-card:hover .avatar {
+  transform: scale(1.1);
+}
+
+/* Nom du membre */
+.team-card h2 {
+  font-family: 'Nature', sans-serif;
+  font-size: 28px;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+/* Informations du membre */
+.team-card p {
+  font-family: 'Nature', sans-serif;
+  font-size: 18px;
+  color: #CC8484;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Badge de rôle */
+.role {
+  display: inline-block;
+  background: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #ff6f61;
+  font-weight: bold;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .role {
+  background: #ff6f61;
+  color: white;
+  transform: scale(1.1);
+}
+
+.info-box {
+  background: linear-gradient(135deg, #fff5f3 0%, #ffe8e5 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #ff6f61;
+}
+
+.info-box h3 {
+  font-family: 'Nature', sans-serif;
+  font-size: 24px;
+  color: #ff6f61;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info-box p {
+  font-family: 'Nature', sans-serif;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.emoji-large {
+  font-size: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banniere-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+
+  .container-contact {
+    margin: 40px auto;
+  }
+
+  .contact-section {
+    padding: 40px 25px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .logo-contact {
+    max-width: 200px;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .team-card {
+    padding: 30px 20px;
+  }
+
+  .info-box {
+    padding: 20px;
+  }
+}

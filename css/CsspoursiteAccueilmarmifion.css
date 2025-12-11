@@ -1,0 +1,254 @@
+/*
+   Polices choisies
+  Importation des polices Bakemono et Nature */
+@font-face {
+  font-family: 'Bakemono';
+  src: url('../fonts/Bakemono-Stereo-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nature';
+  src: url('../fonts/ZTNature-Medium.ttf') format('truetype');
+}
+
+/* Remise à 0 des marges et padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fond simple avec couleur douce */
+body {
+  background: #fff7f7;
+  font-family: 'Nature', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Bannière avec un peu de style */
+.banniere-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 2px solid #ff6f61;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo-marmi {
+  flex-shrink: 0;
+}
+
+/* Logo principal avec hover */
+.logo {
+  width: 350px;
+  height: auto;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+/* Liste des liens de navigation */
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Liens de navigation avec hover */
+.menu a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-family: 'Nature', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.menu a:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* Conteneur principal */
+.container-accueil {
+  width: 90%;
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* Section bienvenue */
+.bienvenue-section {
+  background: white;
+  border-radius: 15px;
+  padding: 60px 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+.bienvenue-section h1 {
+  font-family: 'Nature', sans-serif;
+  font-size: clamp(32px, 6vw, 48px);
+  color: #ff6f61;
+  margin-bottom: 40px;
+}
+
+/* Logo milieu */
+.logo-2 {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(255, 111, 97, 0.2));
+  transition: transform 0.3s;
+}
+
+.logo-2:hover {
+  transform: scale(1.05);
+}
+
+/* Section recettes */
+.recettes-section {
+  background: white;
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de section */
+.recettes-section h2 {
+  font-family: 'Nature', sans-serif;
+  font-size: clamp(28px, 5vw, 38px);
+  color: #ff6f61;
+  margin-bottom: 40px;
+}
+
+/* Carte de recette */
+.cadre-recette {
+  background: linear-gradient(135deg, #fff5f3 0%, #ffe8e5 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 500px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cadre-recette:hover {
+  box-shadow: 0 6px 20px rgba(255, 111, 97, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Icône de la recette */
+.icone-recette {
+  font-size: 80px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Titre du cadre Fondant */
+.cadre-recette h3 {
+  font-family: 'Nature', sans-serif;
+  font-size: 28px;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+
+/* Description du cadre */
+.cadre-recette p {
+  font-family: 'Nature', sans-serif;
+  font-size: 18px;
+  color: #CC8484;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Bouton de la recette */
+.btn-recette {
+  display: inline-block;
+  background: #ff6f61;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-family: 'Nature', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(255, 111, 97, 0.3);
+}
+
+.btn-recette:hover {
+  background: #e05a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+}
+
+.btn-recette::after {
+  content: ' →';
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banniere-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+
+  .container-accueil {
+    margin: 40px auto;
+  }
+
+  .bienvenue-section,
+  .recettes-section {
+    padding: 40px 20px;
+  }
+
+  .logo-2 {
+    max-width: 300px;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+
+  .bienvenue-section,
+  .recettes-section {
+    padding: 30px 15px;
+  }
+
+  .cadre-recette {
+    padding: 20px;
+  }
+}
